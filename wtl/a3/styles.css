@@ -1,0 +1,31 @@
+employees {
+    display: table;
+}
+
+employee {
+    display: table-row-group;
+    background-color: rgb(5, 80, 80);
+    color: yellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 100px;
+}
+
+
+name {
+    font-size: large;
+    color: white;
+    display: table-cell;
+    padding: 10px;
+}
+
+position {
+    display: block;
+    color: aliceblue;
+    display: table-cell; 
+    padding: 10px;
+}
+
+salary {
+    display: table-cell;
+    padding: 10px;
+}
