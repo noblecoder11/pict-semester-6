@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<?xml-stylesheet href="styles.css"?>
+
+<!DOCTYPE employees [
+<!ELEMENT employees (name,position,joinyear,salary)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT ppsition (#PCDATA)>
+<!ELEMENT joinyear (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+]>
+
+<employees>
+    <employee>
+    <name>name</name>
+    <position>position</position>
+    <joinyear>joinyear</joinyear>
+    <salary>salary</salary>
+  </employee>
+  <employee department="ENG">
+    <name id="1">Upendra Roul</name>
+    <position>Software Developer</position>
+    <joinyear>2010</joinyear>
+    <salary>$6000</salary>
+  </employee>
+  <employee category="ENG">
+    <name id="2">Jay Prakash</name>
+    <position>Testers</position>
+    <joinyear>2010</joinyear>
+    <salary>$7000</salary>
+  </employee>
+  <employee category="HR">
+    <name id="3">Rekha Sharma</name>
+    <position>HR</position>
+    <joinyear>2005</joinyear>
+    <salary>$7000</salary>
+  </employee>
+  <employee category="HK">
+    <name id="4">Rohit S</name>
+    <position>House Keeping</position>
+    <joinyear>2000</joinyear>
+    <salary>$3000</salary>
+  </employee>
+</employees>
