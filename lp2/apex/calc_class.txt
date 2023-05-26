@@ -1,0 +1,21 @@
+public class Calc {
+	Public integer num1{get;set;}
+    Public integer num2{get;set;}
+    Public integer result{get;set;}
+    
+    public void Add(){
+        result = num1+num2;
+    }
+    public void Sub(){
+        result = num1-num2;
+    }
+    public void Mult(){
+        result = num1*num2;
+    }
+    public void Div(){
+        if(num2 != 0){
+        	result = num1/num2;
+        }
+        
+    }
+}
