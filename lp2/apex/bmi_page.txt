@@ -1,0 +1,28 @@
+<apex:page controller="BMICalculatorController">
+    <apex:form >
+    	<apex:pageMessages ></apex:pageMessages>
+        
+        <h1>
+            BMI Calculator
+        </h1>
+        
+        <p>
+            Weight(in kg): <apex:inputText value="{!weight}" />
+        </p>
+        
+        <p>
+            Height(in m): <apex:inputText value="{!height}" />
+        </p>
+        
+        <apex:commandButton action="{!calculateBMI}" value="Calculate"/>
+        
+        <apex:outputPanel rendered="{!bmi != null}">
+        	<h3>
+                Result
+            </h3>
+            <p>
+                BMI: {!bmi}
+            </p>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>
