@@ -1,0 +1,13 @@
+public class BMICalculatorController {
+    public Double weight { get; set; }
+    public Double height { get; set; }
+    public Double bmi { get; set; }
+    
+    public void calculateBMI() {
+        if (weight > 0 && height > 0) {
+            bmi = weight / (height * height);
+        } else {
+            ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, 'Invalid weight or height'));
+        }
+    }
+}
