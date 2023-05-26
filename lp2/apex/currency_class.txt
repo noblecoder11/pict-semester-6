@@ -1,0 +1,32 @@
+public class Currency_Converter {
+    public string currency1{get;set;}
+    public string currency2{get;set;}
+    public double val1{get;set;}
+    public double val2{get;set;}
+    
+    public void convert(){
+        if(currency1 == currency2){
+            val2 = val1;
+        }
+        else if(currency1 == 'Rupee' && currency2 == 'Dollar'){
+            val2 = val1/(83);
+        }
+         else if(currency1 == 'Dollar' && currency2 == 'Rupee') {
+            val2 = 83*(val1);
+        }
+        else if(currency1 == 'Pound' && currency2 == 'Rupee') {
+            val2 = 101.68*(val1);
+        }
+        else if(currency1 == 'Rupee' && currency2 == 'Pound') {
+            val2 = val1/(101.68);
+        }
+        else if(currency1 == 'Dollar' && currency2 == 'Pound') {
+            val2 = val1/(1.24);
+        }
+        else if(currency1 == 'Pound' && currency2 == 'Dollar'){
+            val2 = 1.24*(val1);
+        }
+
+    }
+    
+}
